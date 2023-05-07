@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
+
+body {
+  background: #242424;
+  font-family: 'Poppins', sans-serif;
+}
+
+.baslik {
+  text-align: left;
+  margin: 0px;
+  margin-top: 50px;
+  margin-left: 150px;
+  color: White;
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 10px;
+  margin-left: -15px;
+}
+
+.button-container button {
+  padding: 15px 25px;
+  margin: 0 5px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.button-container button.active {
+  background-color: #555555;
+  color: white;
+  text-shadow: 0px 0px 5px #ffffff,
+               0px 0px 5px #ffffff;
+  border: 2px solid white;
+}
+
+.failmessage::before {
+  content: "SONUÇ YOK";
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  font-size: 3em;
+  color: rgb(80, 80, 80);
+}
+
+.failmessage.show::before {
+  display: block;
+  margin-top: 100px;
+}
+
+.searchB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -15px;
+}
+
+.searchBar {
+  align-items: center;
+  width: 30%;
+  height: 32px;
+  margin: 20px;
+  border-radius: 3px;
+  border: 3px solid #121212;
+  padding: 5px 10px;
+  font-size: 12px;
+  background: #121212;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+.searchBar:hover {
+  box-shadow: 0px 0px 5px grey;
+}
+
+.cards {
+  padding: 2rem; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0px;
+  margin-left: -50px;
+}
+
+.cards li {
+  list-style-type:none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100px;
+  width: 250px;
+  height: 400px;
+  background: #333333;
+  color: #848484;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+  text-decoration: none;  
+  text-align: center;
+  font-size: 1rem;
+  overflow: hidden;
+  transition: transform 200ms, box-shadow 200ms;
+  margin: 6px;
+}
+
+.card .card__image {
+  flex: 0 0 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .content {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card__title {
+  font-family: 'Impact', sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card .card__info {
+  font-size: 15px;
+  color: white;
+  margin: 20px;
+  margin-top: -20px;
+}
+
+.card .card__snippet {
+  margin-bottom: 0px;
+  color: #999999;
+  font-size: 15px;
+  text-decoration:none;
+}
+
+.konteyner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cizgi {
+  width: 80%;
+  height: 1px;
+  background-color: #555555;
+  margin-top: 50px;
+  margin-bottom: -20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icerik {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   margin-bottom: 50px;
+  width: 80%;
+}
+
+.discord {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discord h1 {
+  margin: 5px;
+  color: darkgrey;
+}
+
+.discord p {
+  color: white;
+  font-size: 20px; 
+  margin: 0px; 
+  margin-top: -43px; 
+  margin-right: -170px;
+}
+
+.discord img {
+  margin-top: -13px;
+  width:50%;
+  height:50%;
+  border-radius: 50%;
+}
+
+.oyunici {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oyunici h1 {
+  margin: 0;
+  color: darkgrey;
+}
+
+.ustbilgi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.ustbilgi h1 {
+  margin: 0;
+  color: white;
+  font-weight: 500;
+}
+
+.ustbilgi a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.ustbilgi a:hover {
+  color: #999999;
+}
+
+.rainbow {
+  animation-name: colorChange;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  0% { color: blue; }
+  25% { color: green; }
+  50% { color: yellow; }
+  75% { color: orange; }
+  100% { color: red; }
+}
