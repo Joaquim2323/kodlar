@@ -34,6 +34,7 @@ function arama() {
   }
 }
 
+window.onload = function() {
 const button1 = document.getElementById("button1");
   const button2 = document.getElementById("button2");
   const kart1 = document.getElementById("kart1");
@@ -56,3 +57,4 @@ const button1 = document.getElementById("button1");
     button2.classList.remove("active");
     button.classList.add("active");
   }
+}
